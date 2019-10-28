@@ -46,7 +46,7 @@ public class GymProgram {
                 }
                 break;
             case HELP:
-                //addAccount(BankAccountFactory.AccountType.SALARY);
+
                 break;
             case QUIT:
                 FileUtility.saveObject("src/files/customers.ser", customers, StandardOpenOption.CREATE);
