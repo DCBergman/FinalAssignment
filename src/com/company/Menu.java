@@ -22,6 +22,7 @@ public class Menu {
             SHOW_PRICES("View price list"),
             SHOW_ALL_CUSTOMERS("Show all customers"),
             SHOW_CUSTOMER("Show specific customer"),
+            SHOW_ALL_CLASSES("Show all available classes"),
             HELP("Help"),
             QUIT("Quit the program")
             ;

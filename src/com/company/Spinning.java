@@ -1,9 +1,12 @@
 package com.company;
 
-import java.util.ArrayList;
+public class Spinning extends GymClass {
 
-public class Spinning extends Class {
-
+    public int spotsLeft;
+    public int CalculateSpotsLeft(int totalSpots, int pplAttending) {
+        spotsLeft = totalSpots - pplAttending;
+        return spotsLeft;
+    }
 
     public Spinning(String time, String name, int totalSpots, int pplAttending) {
         super(time, name, totalSpots, pplAttending);

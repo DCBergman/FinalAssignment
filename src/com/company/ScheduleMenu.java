@@ -20,16 +20,16 @@ public class ScheduleMenu {
         System.out.println("Error: " + errorMessage);
     }
 
-    public String showMenuAndGetChoice(Class[] classes) {
+    public String showMenuAndGetChoice(GymClass[] gymClasses) {
         System.out.println("Choose Class:\n-------");
         int i = 1;
-        for (Class c : classes) {
+        for (GymClass c : gymClasses) {
             System.out.println(i + " " + c.getClassInfo() );
             i++;
         }
         Scanner scanner = new Scanner(System.in);
         int choiceIndex = scanner.nextInt();
-        return classes[choiceIndex-1].getClassName();
+        return gymClasses[choiceIndex-1].getClassName();
 
 
     }

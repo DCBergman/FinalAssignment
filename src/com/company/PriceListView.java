@@ -7,6 +7,9 @@ public class PriceListView {
     private float pricePerMonth = 300;
     private float pricePerYear = 3500;
 
+    public PriceListView() {
+    }
+
     public void showPriceList() {
 
         System.out.println("\nPrice list\n----------");
