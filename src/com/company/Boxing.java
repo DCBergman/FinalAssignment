@@ -3,8 +3,9 @@ package com.company;
 public class Boxing extends GymClass {
 
     private int spotsLeft;
+
     @Override
-    public int CalculateSpotsLeft(int totalSpots, int pplAttending) {
+    public int calculateSpotsLeft(int totalSpots, int pplAttending) {
         spotsLeft = totalSpots - pplAttending;
         return spotsLeft;
     }

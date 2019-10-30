@@ -24,14 +24,13 @@ public class ScheduleMenu {
         System.out.println("Choose Class:\n-------");
         int i = 1;
         for (GymClass c : gymClasses) {
-            System.out.println(i + " " + c.getClassInfo() );
+            System.out.println(i + " " + c.getClassInfo());
             i++;
         }
         Scanner scanner = new Scanner(System.in);
         int choiceIndex = scanner.nextInt();
-        return gymClasses[choiceIndex-1].getClassName();
 
-
+        return gymClasses[choiceIndex - 1].getClassName();
     }
 }
 

@@ -16,21 +16,12 @@ public class PriceListView {
         System.out.printf("Regular prices: %nPer class:   %.2fkr %nPer month:   %.2fkr %nPer Year:    %.2fkr%n", pricePerClass, pricePerMonth, pricePerYear);
         System.out.printf("%nStudent prices: %nPer class:   %.2fkr %nPer month:   %.2fkr %nPer Year:    %.2fkr%n", pricePerClass*0.80, pricePerMonth*0.80, pricePerYear*0.80);
 
-        System.out.println("\nTo go back to main menu press 1");
+        System.out.println("\nTo go back to main menu press enter");
         Scanner scanner = new Scanner(System.in);
-        int input = scanner.nextInt();
-        if(input == 1 ){
-            goBackToMainMenu();
-        }
-        else{
-            System.out.println("Invalid input");
-        }
-
-    }
-    public boolean goBackToMainMenu(){
-            return true;
+        scanner.nextLine();
     }
 }
+
 
 
 
